@@ -1,0 +1,36 @@
+{
+  "name": "reveal-webpack",
+  "version": "0.0.0",
+  "description": "Run reveal.js use webpack build system.",
+  "homepage": "",
+  "author": {
+    "name": "gsmlg",
+    "email": "gsmlg.com@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "keywords": [
+    "reveal",
+    "keynote",
+    "webpack"
+  ],
+  "devDependencies": {
+  },
+  "dependencies": {
+  },
+  "scripts": {
+    "test": "echo no test"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "",
+  "license": "GPL-3.0"
+}
