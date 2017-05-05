@@ -9,9 +9,12 @@
     "url": ""
   },
   "files": [
-    "generators"
+    "generators",
+    "generators/app",
+    "generators/app/templates",
+    "generators/app/templates/*"
   ],
-  "main": "generators/index.js",
+  "main": "generators/app/index.js",
   "keywords": [
     "reveal",
     "keynote",
