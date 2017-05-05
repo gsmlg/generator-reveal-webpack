@@ -12,10 +12,10 @@ module.exports = class extends Generator {
 
     const prompts = [
       {
-        type    : 'input',
-        name    : 'name',
-        message : 'Your project name',
-        default : this.appname
+        type: 'input',
+        name: 'name',
+        message: 'Your project name',
+        default: this.appname
       }
     ];
 
@@ -26,7 +26,6 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    var copy = this.fs.copy;
     var files = [
       '.editorconfig',
       '.eslintignore',
@@ -45,15 +44,13 @@ module.exports = class extends Generator {
       'src/config/base.js',
       'src/config/dev.js',
       'src/config/dist.js',
-      'src/config/test.js',
       'src/images/yeoman.png',
       'src/slides/index.js',
-      'static/favicon.ico'
+      'src/static/favicon.ico'
     ];
 
-
-    files.forEach(function(file) {
-      copy(
+    files.forEach(file => {
+      this.fs.copy(
         this.templatePath(file),
         this.destinationPath(file)
         );
@@ -64,7 +61,7 @@ module.exports = class extends Generator {
     this.installDependencies({
       bower: false,
       npm: false,
-      yarn: false,
+      yarn: true
     });
   }
 };
