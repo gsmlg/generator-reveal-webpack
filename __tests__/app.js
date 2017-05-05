@@ -26,8 +26,9 @@ describe('generator-reveal-webpack:app', () => {
       'src/index.html',
       'src/client.js',
       'src/config/base.js',
-      'src/config/dev.js',
-      'src/config/dist.js',
+      'src/config/Dev.js',
+      'src/config/Dist.js',
+      'src/config/Test.js',
       'src/images/yeoman.png',
       'src/slides/index.js',
       'src/static/favicon.ico'
