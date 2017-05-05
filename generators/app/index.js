@@ -27,12 +27,12 @@ module.exports = class extends Generator {
 
   writing() {
     var files = [
-      '.editorconfig',
-      '.eslintignore',
-      '.gitattributes',
-      '.gitignore',
-      '.yarnrc',
-      '.travis.yml',
+      '_editorconfig',
+      '_eslintignore',
+      '_gitattributes',
+      '_gitignore',
+      '_yarnrc',
+      '_travis.yml',
       'package.json',
       'README.md',
       'webpack.config.js',
@@ -53,9 +53,11 @@ module.exports = class extends Generator {
     ];
 
     files.forEach(file => {
+      var distFile = file.indexOf('_') === 0 ?
+        '.' + file.slice(1) : file;
       this.fs.copy(
         this.templatePath(file),
-        this.destinationPath(file)
+        this.destinationPath(distFile)
         );
     });
   }

@@ -1,5 +1,4 @@
 .*.swp
-._*
 .DS_Store
 .git
 .hg
@@ -10,3 +9,4 @@
 config.gypi
 CVS
 npm-debug.log
+yarn-error.log
