@@ -1,6 +1,6 @@
 {
   "name": "generator-reveal-webpack",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Yeoman generator for reveal.js use webpack build system.",
   "homepage": "",
   "author": {
@@ -12,7 +12,14 @@
     "generators",
     "generators/app",
     "generators/app/templates",
-    "generators/app/templates/_*"
+    "generators/app/templates/_editorconfig",
+    "generators/app/templates/_eslintignore",
+    "generators/app/templates/_gitattributes",
+    "generators/app/templates/_gitignore",
+    "generators/app/templates/_yarnrc",
+    "generators/app/templates/_travis.yml",
+    "generators/app/templates/src",
+    "generators/app/templates/conf"
   ],
   "main": "generators/app/index.js",
   "keywords": [
