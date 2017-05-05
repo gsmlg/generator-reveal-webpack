@@ -29,8 +29,10 @@ module.exports = class extends Generator {
     var files = [
       '.editorconfig',
       '.eslintignore',
+      '.gitattributes',
       '.gitignore',
       '.yarnrc',
+      '.travis.yml',
       'package.json',
       'README.md',
       'webpack.config.js',
