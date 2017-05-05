@@ -10,12 +10,14 @@ module.exports = class extends Generator {
       'Welcome to the first-rate ' + chalk.red('generator-reveal-webpack') + ' generator!'
     ));
 
-    const prompts = [{
-      type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
-      default: true
-    }];
+    const prompts = [
+      {
+        type    : 'input',
+        name    : 'name',
+        message : 'Your project name',
+        default : this.appname
+      }
+    ];
 
     return this.prompt(prompts).then(props => {
       // To access props later use this.props.someAnswer;
@@ -24,13 +26,45 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+    var copy = this.fs.copy;
+    var files = [
+      '.editorconfig',
+      '.eslintignore',
+      '.gitignore',
+      '.yarnrc',
+      'package.json',
+      'README.md',
+      'webpack.config.js',
+      'conf/webpack/Base.js',
+      'conf/webpack/Dev.js',
+      'conf/webpack/Dist.js',
+      'conf/webpack/Test.js',
+      'conf/webpack/index.js',
+      'src/index.html',
+      'src/client.js',
+      'src/config/base.js',
+      'src/config/dev.js',
+      'src/config/dist.js',
+      'src/config/test.js',
+      'src/images/yeoman.png',
+      'src/slides/index.js',
+      'static/favicon.ico'
+    ];
+
+
+    files.forEach(function(file) {
+      copy(
+        this.templatePath(file),
+        this.destinationPath(file)
+        );
+    });
   }
 
   install() {
-    this.installDependencies();
+    this.installDependencies({
+      bower: false,
+      npm: false,
+      yarn: false,
+    });
   }
 };
