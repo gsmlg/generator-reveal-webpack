@@ -11,10 +11,12 @@ describe('generator-reveal-webpack:app', () => {
 
   it('creates files', () => {
     assert.file([
-      '.editorconfig',
-      '.eslintignore',
-      '.gitignore',
-      '.yarnrc',
+      // 'editorconfig',
+      // 'eslintignore',
+      // 'gitattributes',
+      // 'gitignore',
+      // 'yarnrc',
+      // 'travis.yml',
       'package.json',
       'README.md',
       'webpack.config.js',

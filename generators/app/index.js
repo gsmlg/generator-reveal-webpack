@@ -27,12 +27,12 @@ module.exports = class extends Generator {
 
   writing() {
     var files = [
-      '_editorconfig',
-      '_eslintignore',
-      '_gitattributes',
-      '_gitignore',
-      '_yarnrc',
-      '_travis.yml',
+      'editorconfig',
+      'eslintignore',
+      'gitattributes',
+      'gitignore',
+      'yarnrc',
+      'travis.yml',
       'package.json',
       'README.md',
       'webpack.config.js',
@@ -53,8 +53,16 @@ module.exports = class extends Generator {
     ];
 
     files.forEach(file => {
-      var distFile = file.indexOf('_') === 0 ?
-        '.' + file.slice(1) : file;
+      let renames = [
+        'editorconfig',
+        'eslintignore',
+        'gitattributes',
+        'gitignore',
+        'yarnrc',
+        'travis.yml'
+      ];
+      let distFile = renames.indexOf(file) >= 0 ?
+        '.' + file : file;
       this.fs.copy(
         this.templatePath(file),
         this.destinationPath(distFile)
