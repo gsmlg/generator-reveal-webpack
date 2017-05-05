@@ -24,5 +24,3 @@ RevealMarkdown.initialize();
 
 hljs.initHighlightingOnLoad();
 
-console.log(notes);
-

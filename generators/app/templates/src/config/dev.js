@@ -1,4 +1,4 @@
-import baseConfig from './base';
+import baseConfig from './Base';
 
 const config = {
   appEnv: 'dev',
