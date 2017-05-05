@@ -9,7 +9,7 @@
     "url": ""
   },
   "files": [
-    "src"
+    "*"
   ],
   "main": "src/index.js",
   "keywords": [
