@@ -6,7 +6,12 @@
 yarn
 ```
 
-Then generate your new project:
+Then run reveal app
+```bash
+yarn start
+# or 
+npm start
+```
 
 ## License
 
