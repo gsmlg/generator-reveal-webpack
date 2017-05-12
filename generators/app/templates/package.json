@@ -42,6 +42,7 @@
     "webpack": "^2.5.0"
   },
   "scripts": {
+    "start": "serve:dev",
     "serve:dev": "webpack-dev-server --env dev",
     "test": "echo no test"
   },

@@ -10,6 +10,14 @@ npm install -g yo
 npm install -g generator-reveal-webpack
 ```
 
+OR
+
+```bash
+yarn global add yo
+yarn global add generator-reveal-webpack
+```
+
+
 Then generate your new project:
 
 ```bash
@@ -34,3 +42,4 @@ GPL-3.0 © [gsmlg]()
 [travis-url]: https://travis-ci.org/gsmlg/generator-reveal-webpack
 [daviddm-image]: https://david-dm.org/gsmlg/generator-reveal-webpack.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/gsmlg/generator-reveal-webpack
+
