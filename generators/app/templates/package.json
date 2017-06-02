@@ -45,6 +45,7 @@
   "scripts": {
     "start": "serve:dev",
     "serve:dev": "webpack-dev-server --env dev",
+    "build": "webpack --env dist",
     "test": "echo no test"
   },
   "eslintConfig": {
