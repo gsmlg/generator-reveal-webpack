@@ -57,6 +57,10 @@ class WebpackBaseConfig {
       module: {
         rules: [
           {
+            test: /\.(txt)|(md)$/,
+            use: ['raw-loader']
+          },
+          {
             test: /\.jsx?$/,
             include: this.srcPathAbsolute,
             use: [
