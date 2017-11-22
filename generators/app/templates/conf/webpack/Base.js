@@ -74,7 +74,7 @@ class WebpackBaseConfig {
                     // ['transform-es2015-classes', {loose: true}],
                   ],
                   presets: [
-                    'es2015',
+                    'env',
                     'stage-0'
                   ]
                 }
