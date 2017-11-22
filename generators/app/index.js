@@ -66,7 +66,7 @@ module.exports = class extends Generator {
       this.fs.copy(
         this.templatePath(file),
         this.destinationPath(distFile)
-        );
+      );
     });
   }
 
