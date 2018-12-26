@@ -43,7 +43,7 @@ module.exports = class extends Generator {
       'conf/webpack/index.js',
       'src/index.html',
       'src/client.js',
-      'src/config/base.js',
+      'src/config/Base.js',
       'src/config/Dev.js',
       'src/config/Dist.js',
       'src/config/Test.js',
