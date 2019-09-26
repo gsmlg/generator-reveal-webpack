@@ -68,14 +68,9 @@ class WebpackBaseConfig {
                 loader: 'babel-loader',
                 options: {
                   plugins: [
-                    // 'syntax-dynamic-import',
-                    // 'transform-proto-to-assign',
-                    // 'transform-class-properties',
-                    // ['transform-es2015-classes', {loose: true}],
                   ],
                   presets: [
-                    'env',
-                    'stage-0'
+                    '@babel/preset-env',
                   ]
                 }
               }
