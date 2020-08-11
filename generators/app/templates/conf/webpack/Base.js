@@ -10,7 +10,6 @@ class WebpackBaseConfig {
     this.commonPlugins = [
       new webpack.ProvidePlugin({
         'Reveal': 'reveal.js',
-        'hljs': 'reveal.js/plugin/highlight/highlight.js'
       })
     ]
   }
@@ -56,10 +55,6 @@ class WebpackBaseConfig {
       entry: './index.js',
       module: {
         rules: [
-          {
-            test: /\.(txt)|(md)$/,
-            use: ['raw-loader']
-          },
           {
             test: /\.jsx?$/,
             include: this.srcPathAbsolute,
@@ -132,7 +127,11 @@ class WebpackBaseConfig {
             use: [
                 'file-loader'
             ]
-        }
+        },
+          {
+            test: /\.(txt|html|md)$/,
+            use: ['raw-loader']
+          },
         ]
       },
       output: {
