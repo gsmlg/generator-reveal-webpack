@@ -1,5 +1,5 @@
-import 'reveal.js/css/reveal.css';
-import 'reveal.js/css/theme/moon.css';
+import 'reveal.js/dist/reveal.css';
+import 'reveal.js/dist/theme/moon.css';
 import 'highlight.js/styles/atom-one-dark.css'
 
 import $ from 'jquery';
